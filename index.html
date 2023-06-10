@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Developer</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            /* background-color: #f3f5f8; */
+        }
+
+        b {
+            font-size: 70px;
+            color: #7f00ff;
+        }
+
+        .navItems {
+            display: flex;
+        }
+
+        .navItems li {
+            list-style: none;
+            margin: 0 15px;
+
+        }
+
+        .navItems li a {
+            font-size: 25px;
+            color: #3d535f;
+            letter-spacing: 3px;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+
+        .navItems li:hover a,
+        .links a:hover {
+            color: #7f00ff;
+        }
+
+        .links a {
+            font-size: 30px;
+            color: #3d535f;
+            margin: 35px 10px;
+        }
+
+        .wrapper {
+            display: flex;
+            width: 100%;
+            height: calc(100vh - 80px);
+            justify-content: center;
+            align-items: center;
+            padding: 0 10%;
+            overflow: hidden;
+        }
+
+        .cols {
+            width: 50%;
+        }
+
+        .cols0 {
+            width: 100%;
+            z-index: 5;
+        }
+
+        .topline-text {
+            display: block;
+            position: relative;
+            font-size: 35px;
+            letter-spacing: 5px;
+            color: white;
+        }
+
+      
+        .topline::after {
+            position: absolute;
+            content: '';
+            height: 4px;
+            width: 35px;
+            bottom: 10px;
+            background-color: #7f00ff;
+        }
+
+        h1 {
+            display: block;
+            font-size: 7em;
+            font-weight: 900;
+            color: white;
+
+        }
+
+        .multiText {
+            color: #7f00ff;
+            text-transform: captalize;
+        }
+
+        p {
+            display: block;
+            width: 90%;
+            font-size: 1.2em;
+            color: white;
+        }
+
+
+
+        .btn {
+            outline: none;
+            border: none;
+            cursor: pointer;
+            font-size: 25px;
+            font-weight: 400;
+            color: #fff;
+            background-color: #3d3d3d;
+            padding: 8px 14px;
+            letter-spacing: 2px;
+            box-shadow: 0 7px 10px rgba(0, 0, 0, 0.4);
+
+        }
+
+        .btn:hover {
+            background-color: #7f00ff;
+
+        }
+
+        .imgbox {
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+
+        .bock-move {
+            position: relative;
+            width: calc(130% - 80px);
+            right: 50px;
+            animation: animateUser 4s linear infinite;
+        }
+
+        .imgbox img {
+            position: relative;
+            height: 100%;
+            width: calc(130% - 80px);
+            top: -100px;
+            right: 50px;
+            transform: rotateY(180deg);
+            animation: animateUser 4s linear infinite;
+        }
+
+        @keyframes animateUser {
+            50% {
+                right: 30px;
+            }
+        }
+
+        .btns{
+            margin-top: 2em;
+        }
+
+        body{
+  background: orange;
+}
+
+
+.circle{
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  animation: ripple 15s infinite;
+  box-shadow: 0px 0px 1px 0px #508fb9;
+}
+
+.small{
+  width: 200px;
+  height: 200px;
+  left: -100px;
+  bottom: -100px;
+}
+
+.medium{
+  width: 400px;
+  height: 400px;
+  left: -200px;
+  bottom: -200px;
+}
+
+.large{
+  width: 600px;
+  height: 600px;
+  left: -300px;
+  bottom: -300px;
+}
+
+.xlarge{
+  width: 800px;
+  height: 800px;
+  left: -400px;
+  bottom: -400px;
+}
+
+.xxlarge{
+  width: 1000px;
+  height: 1000px;
+  left: -500px;
+  bottom: -500px;
+}
+
+.shade1{
+  opacity: 0.2;
+}
+.shade2{
+  opacity: 0.5;
+}
+
+.shade3{
+  opacity: 0.7;
+}
+
+.shade4{
+  opacity: 0.8;
+}
+
+.shade5{
+  opacity: 0.9;
+}
+
+@keyframes ripple{
+  0%{
+    transform: scale(0.8);
+  }
+  
+  50%{
+    transform: scale(1.2);
+  }
+  
+  100%{
+    transform: scale(0.8);
+  }
+}
+
+    </style>
+</head>
+
+<body>
+    <div class='ripple-background'>
+        <div class='circle xxlarge shade1'></div>
+        <div class='circle xlarge shade2'></div>
+        <div class='circle large shade3'></div>
+        <div class='circle mediun shade4'></div>
+        <div class='circle small shade5'></div>
+      </div>
+      
+    <div class="container">
+        <div class="wrapper">
+            <div class="bock-move">
+
+                <div class="cols cols0">
+                    <span class="topline-text">Hello, I'm Software Developer</span>
+                    <h1>I can make <span class="multiText"></span></h1>
+
+                    <p>
+                        As a full-stack programmer, I possess a versatile skill set that covers the entire software development process. With expertise in both front-end and back-end development, </p>
+<p>My proficiency in various programming languages, databases, and frameworks allows me to adapt to diverse project requirements. I am a skilled problem solver and adaptable to different challenges, consistently delivering high-quality solutions. </p>
+                    <div class="btns">
+                        <a class="btn" target="_blank" href="https://www.linkedin.com/in/joao-correa/">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <script>
+            var typingEffect = new Typed(".multiText", {
+                strings: ["Api", "Mobile App", "Web Site", "Softwares"],
+                loop: true,
+                typeSpeed: 100,
+                backSpeed: 80,
+                backDelay: 1500
+            })
+        </script>
+</body>
+
+</html>
